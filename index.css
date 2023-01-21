@@ -1,0 +1,318 @@
+
+/* All CSS Properties only for header that was copied from https://www.sexyfightdreams.com/*/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+:root{
+    --primary-color: #242C38;
+}
+
+
+header.test-header{
+    font-family: 'PT Sans', sans-serif;
+    color: var(--primary-color);
+}
+
+.menu-container {
+    background-color: #f2f2f2 ;
+    padding: 0.3rem;
+}
+
+.sfd-club-link{
+    font-size: 15px;
+    color: #3E3E40;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.navbar-default .navbar-nav>li>a{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+    font-size: 16px ;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 40px !important;
+    height: 40px !important;
+    vertical-align: baseline !important;
+}
+
+.active{
+    background-color: #ffed00;
+}
+
+
+.form-control{
+    padding: 6px 12px;
+    opacity: 0.4;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    height: 46px;
+    border: 1px solid rgb(204, 204, 204);
+    font-size: 17px;
+}
+
+.form-control::placeholder{
+    color: #000;
+}
+
+.search-top .input-group-btn>.btn {
+    height: 46px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-left: 0;
+    font-size: 17px;
+    color: #898c91;
+    border-radius: 0;
+}
+
+.input-group-btn>.btn {
+    position: relative;
+}
+
+.padding-0{
+    padding: 0 8px 0 0 ;
+}
+
+.padding{
+    padding: 4px 10px;
+}
+
+.video-icon{
+    font-size: 24px;
+}
+
+.video-icon:active{
+    color: #000;
+    border-color: transparent;
+}
+
+.text{
+    position: relative;
+    top: -3px;
+}
+
+a.video-icon:hover{
+    color: #fff;
+}
+
+.caret{
+    margin-top: -10px;
+}
+
+.search-top span.input-group-btn button.btn-default {
+    color: #3e3e41;
+    background: #ffed00;
+    font-size: 30px;
+    line-height: 30px;
+    border-radius: 0;
+}
+
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    z-index: 2;
+    margin-left: -1px;
+}
+
+.search-top .dropdown-menu>li>a {
+    color: #3e3e40;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 20px;
+}
+
+.search-top .dropdown-menu>li>a:hover{
+    color: #fff;
+    background-color:#898c91;
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition-property: all;
+    transition-duration: 0.27s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    transition-delay: initial;
+}
+
+.dropdown-menu{
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 0%;
+}
+
+.shake{
+    position: relative;
+    animation-name: shakeAnim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+}
+
+.navbar-toggle {
+   position: relative;
+   margin-right: 44%;
+   border: none;
+}
+
+.menu{
+   position: relative;
+   margin-left: 44%;
+   margin-top: 2%;
+   width: 40px;
+   font-size: 15px;
+   font-weight: lighter;
+}
+
+.navbar{
+    border: none;
+}
+
+.position{
+    padding-bottom: 100;
+}
+
+
+@keyframes shakeAnim {
+    0% {left: 0}
+    10% {left: -3px}
+    20% {left: 3px}
+    30% {left: -8px}
+    40% {left: 8px}
+    50% {left: -5px}
+    60% {center: 3px}
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .padding-search-bar{
+        padding: 0 ;
+    }
+    .pt-30{
+        padding-top: 0;
+    }
+    .pb-30{
+        padding-bottom: 0;
+    }
+
+    .navbar-default{
+        background-color: #f2f2f2;
+    }
+    
+    .navbar-nav>li>a.menu-link{
+        background-color: #000;
+        color: #fff;
+        text-align: left;
+        font-size: 14px;
+    }
+    .active{
+        text-align: left;
+        font-size: 14px;
+    }
+    .navbar-nav>li>a.active:hover{
+        background-color: #ffed00;
+    }
+
+    .navbar-nav{
+        margin: 0 15px 5px 15px;
+    }
+    .navbar-nav>li>a.menu-link:hover{
+        background-color: #000;
+        color: #fff;
+    }
+
+    .navbar-toggle {
+        border: none;
+        background: transparent !important;
+      }
+      .navbar-toggle:hover {
+        background: transparent !important;
+      }
+      .navbar-toggle .icon-bar {
+        width: 22px;
+        transition: all 0.2s;
+      }
+      .navbar-toggle .top-bar {
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+      }
+      .navbar-toggle .middle-bar {
+        opacity: 0;
+      }
+      .navbar-toggle .bottom-bar {
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+      }
+      .navbar-toggle.collapsed .top-bar {
+        transform: rotate(0);
+      }
+      .navbar-toggle.collapsed .middle-bar {
+        opacity: 1;
+      }
+      .navbar-toggle.collapsed .bottom-bar {
+        transform: rotate(0);
+      }
+}
+
+
+@media screen and (min-width: 768px) {
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    } 
+     .navbar-nav>li {
+          float: none;
+          display: inline-block;
+    }
+    
+
+    .navbar-default{
+            background-color: white;
+    }
+    .navbar-nav>li>a.menu-link:hover{
+        background-color: #ffed00;
+    }
+}
+
+@media screen and (max-width: 652px){
+
+     .menu{
+        position: relative;
+        margin-left: 42%;
+        margin-top: 2%;
+     }
+}
+@media screen and (max-width: 555px){
+     
+    .menu{
+       position: relative;
+       margin-left: 38%;
+       margin-top: 2.8%;
+    }
+}
+
+@media screen and (max-width: 424px){
+     
+    .menu{
+       position: relative;
+       margin-left: 30%;
+       margin-top: 2.8%;
+    }
+}
